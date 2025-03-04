@@ -1,0 +1,388 @@
+/* //links.module.css */
+.container {
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.line1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.line1 h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36PX;
+    letter-spacing: 2%;
+}
+
+.line1 span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 2%;
+}
+
+.congratsMessage {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex: 1;
+    margin-top: 40px;
+}
+
+.contentDiv1 {
+    padding: 30px;
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+}
+
+.contentDiv2 {
+    padding: 30px;
+}
+
+.contentDiv2::-webkit-scrollbar {
+    display: none;
+}
+
+.profileDiv,
+.bannerDiv {
+    width: 640px;
+}
+
+.profileDiv h4,
+.bannerDiv h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+}
+
+.profileSection,
+.bannerSection {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.ImgDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.img {
+    width: 96px;
+    height: 96px;
+    border-radius: 100px;
+    background-color: #DFDFDF;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.optionsDiv {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addLinksSection {
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.oD1 {
+    width: 480px;
+    height: 48px;
+    border-radius: 64px;
+    padding: 12px 24px;
+    background-color: #28A263;
+    color: #ffffff;
+    text-align: center;
+}
+
+.oD1 span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.oD2 {
+    width: 480px;
+    height: 48px;
+    border-radius: 64px;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #A8AAA2;
+    text-align: center;
+    border: 1px solid #E0E2D9;
+    cursor: pointer;
+}
+
+.title {
+    border-radius: 10px;
+    width: 596px;
+    height: 52px;
+    background-color: #F6F7F5;
+    padding: 2px 10px;
+}
+
+.title p,
+.bioBox p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: #676B5F;
+    font-family: 'Inter', sans-serif;
+}
+
+.bioBox {
+    border-radius: 8px;
+    width: 592px;
+    height: 96px;
+    background-color: #F6F7F5;
+    padding: 2px 10px;
+}
+
+.bioInput {
+    background-color: transparent;
+    /* Make the background transparent */
+    border: none;
+    /* Remove border */
+    width: 100%;
+    /* Take up the full width of the parent container */
+    height: 80%;
+    /* 80% of the parent container's height */
+    resize: none;
+    /* Disable resizing */
+    padding: 0 10px;
+    /* Add padding to match the style */
+    font-family: 'Inter', sans-serif;
+    /* Match the font */
+    color: #676B5F;
+    /* Match text color */
+    font-size: 14px;
+    /* Match font size */
+    line-height: 21px;
+    /* Match line height */
+}
+
+.bioCounter {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 15px;
+}
+
+.bioCounter span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #676B5F;
+    font-family: 'Inter', sans-serif;
+}
+
+.linksOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.uploadButton {
+    width: 610px;
+    height: 48px;
+    border-radius: 64px;
+    padding: 12px 24px;
+    text-align: center;
+    background-color: #28A263;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.uploadButton label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.bannerDiv {
+    margin-top: 45px;
+}
+
+.bannerSection {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerHero {
+    width: 100%;
+    height: 308.27px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bannerImg {
+    width: 101px;
+    height: 102.74px;
+    border-radius: 100px;
+    background-color: #D9D9D9;
+}
+
+.bannerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.usernameDiv {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.usernameDiv span {
+    font-size: 24.05px;
+    line-height: 55.5px;
+    letter-spacing: 0%;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.usernameUrl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.usernameUrl span {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.saveButton {
+    margin-top: 50px;
+}
+
+.saveButton button {
+    width: 190px;
+    height: 50px;
+    float: right;
+    padding: 10px 12px;
+    background-color: #29A263;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.colorPicker {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+.colorPicker p{
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0%;
+    font-weight: 600;
+}
+
+.colorOptions {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.colorCircle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.colorInput {
+    width: 232px;
+    height: 48px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    background-color: #F6F7F5;
+}
+
+.colorPreview {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+@media screen and (max-width: 768px) {
+    .headingDiv {
+        display: none;
+    }
+
+    .contentDiv1 {
+        display: none;
+    }
+
+    .contentDiv2 {
+        width: 80%;
+    }
+
+}
