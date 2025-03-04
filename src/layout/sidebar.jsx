@@ -28,10 +28,12 @@ const Sidebar = ({ currentPath }) => {
 
     return (
         <div className={styles.sidebar}>
-            <div className={styles.logoContainer}>
-                <img src={logo} alt="logo" className={styles.logo} />
-                <h2>Spark</h2>
-            </div>
+             <Link to="/" ><div className={styles.logoContainer}>
+                
+                    <img src={logo} alt="logo" className={styles.logo} />
+                    <h2>Spark</h2>
+                
+            </div></Link>
 
             {/* Menu options */}
             <ul className={styles.menu}>
