@@ -152,7 +152,7 @@
 
 .title {
     border-radius: 10px;
-    width: 596px;
+    width: 100%;
     height: 52px;
     background-color: #F6F7F5;
     padding: 2px 10px;
@@ -170,7 +170,7 @@
 
 .bioBox {
     border-radius: 8px;
-    width: 592px;
+    width: 100%;
     height: 96px;
     background-color: #F6F7F5;
     padding: 2px 10px;
@@ -222,7 +222,7 @@
 }
 
 .uploadButton {
-    width: 610px;
+    width: 100%;
     height: 48px;
     border-radius: 64px;
     padding: 12px 24px;
@@ -331,7 +331,7 @@
     margin: 10px;
 }
 
-.colorPicker p{
+.colorPicker p {
     font-size: 13px;
     line-height: 13px;
     letter-spacing: 0%;
@@ -382,7 +382,21 @@
     }
 
     .contentDiv2 {
-        width: 80%;
+        max-width: 100%;
+    }
+
+    .profileDiv,
+    .bannerDiv {
+        width: 100%;
+    }
+
+    .img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .optionsDiv{
+        width: 100%;
     }
 
 }
