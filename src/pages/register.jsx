@@ -2,7 +2,6 @@ import styles from '../styles/register.module.css'
 import { registerService } from '../services'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import toast from 'react-hot-toast'
 import logo from '../assets/logo-group.svg'
 import { Link } from "react-router-dom";
 import Toaster from '../components/toaster';
@@ -268,7 +267,7 @@ const register = () => {
                                         {isChecked && (
                                             <span
                                                 style={{
-                                                    width: '6px',
+                                                    width: '12px',
                                                     height: '10px',
                                                     border: 'solid white',
                                                     borderWidth: '0 2px 2px 0',

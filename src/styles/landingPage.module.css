@@ -313,4 +313,9 @@
     .testimonialCard {
         padding: 24px;
     }
+
+    .customer2 img{
+        width: 30px;
+    }
+    
 }

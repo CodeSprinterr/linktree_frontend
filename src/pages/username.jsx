@@ -79,7 +79,7 @@ const username = () => {
           <img src={logo} alt="Spark Logo" style={{ width: "123px", height: "33px" }} />
         </div>
         <div className={styles.leftContainer}>
-          <div className={styles.innerContainer} style={{ width: '65%' }}>
+          <div className={styles.innerContainer}>
             <h1 style={{ fontSize: '40px', fontWeight: '900', letterSpacing: '-0.02em', lineHeight: '1.1' }}>Tell us about yourself</h1>
             <p style={{ fontSize: '16px', fontWeight: '400', lineHeight: '1.5', color: '#6E6E6E', marginTop: '10px' }}>For a personalized Spark experience</p>
 

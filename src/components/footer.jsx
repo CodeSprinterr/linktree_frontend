@@ -36,6 +36,14 @@ export default function Footer() {
                         <Link href="/cookie">Cookie Notice</Link>
                         <Link href="/trust">Trust Center</Link>
                     </div>
+                    <div className="auth-buttons-1">
+                        <Link to="/login" className="btn btn-login">
+                            Log in
+                        </Link>
+                        <Link to="/register" className="btn btn-signup">
+                            Sign up free
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="footer-bottom">
@@ -83,7 +91,10 @@ export default function Footer() {
                 }
 
                 .auth-buttons {
-                margin-bottom: 3rem;
+                    margin-bottom: 3rem;
+                }
+                .auth-buttons-1 {
+                   display: none;
                 }
 
                 .btn {
@@ -114,10 +125,10 @@ export default function Footer() {
                 }
 
                 .footer-content {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 2rem;
-                margin-bottom: 3rem;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 2rem;
+                    margin-bottom: 3rem;
                 }
 
 
@@ -179,10 +190,37 @@ export default function Footer() {
                     flex-direction: column;
                     text-align: center;
                 }
+                .auth-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                .btn-login {
+                    width: fit-content;
+                }
+                .btn-signup {
+                    width: fit-content;
+                }
 
                 .social-links {
                     justify-content: center;
                 }
+                .footer-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .auth-buttons {
+                    display: none;
+                }
+
+                .auth-buttons-1 {
+                    display: block;
+            }
+                    .acknowledgment{
+                    display: none
+                    }
                 }
                 `}
             </style>
