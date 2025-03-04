@@ -6,11 +6,14 @@ import toast from 'react-hot-toast'
 import logo from '../assets/logo-group.svg'
 import { Link } from "react-router-dom";
 import Toaster from '../components/toaster';
+import eye from '../assets/eye.svg'
+import eyeOff from '../assets/eye.svg'  // Add an eye-off icon
 
 export default function Login() {
     const navigate = useNavigate()
     const [isLoading, setIsLoading] = useState(false)
     const [toast, setToast] = useState({ message: "", type: "" })
+    const [showPassword, setShowPassword] = useState(false);
     const [formData, setFormData] = useState({
         email: "",
         password: ""
@@ -36,7 +39,6 @@ export default function Login() {
                 setToast({ message: "Login successful", type: "success" });
                 const data = await response.json()
                 localStorage.setItem("token", data.token)
-
                 navigate(`${data.redirectURl}`)
             }
             setIsLoading(false)
@@ -75,13 +77,36 @@ export default function Login() {
                                 outline: "none"
                             }} type="text" placeholder="Spark/ Username" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
 
-                            <input style={{
-                                padding: "15px",
-                                borderRadius: "10px",
-                                backgroundColor: "#EFF0EC",
-                                border: "none",
-                                outline: "none"
-                            }} type="password" placeholder="Password" value={formData.password} onChange={(e) => setFormData({ ...formData, password: e.target.value })} />
+                            <div style={{ position: "relative", width: "100%" }}>
+                                <input 
+                                    style={{
+                                        padding: "15px",
+                                        borderRadius: "10px",
+                                        backgroundColor: "#EFF0EC",
+                                        border: "none",
+                                        outline: "none",
+                                        width: "100%"
+                                    }} 
+                                    type={showPassword ? "text" : "password"} 
+                                    placeholder="Password" 
+                                    value={formData.password} 
+                                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                                />
+                                <img 
+                                    src={showPassword ? eyeOff : eye} 
+                                    alt="Toggle Password" 
+                                    onClick={() => setShowPassword(!showPassword)}
+                                    style={{
+                                        position: "absolute",
+                                        right: "15px",
+                                        top: "50%",
+                                        transform: "translateY(-50%)",
+                                        cursor: "pointer",
+                                        width: "20px",
+                                        height: "20px"
+                                    }}
+                                />
+                            </div>
 
                             <button
                                 style={{
@@ -128,5 +153,4 @@ export default function Login() {
             </div>
         </div>
     )
-
 }
